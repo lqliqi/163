@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8" />
+    <title>网易H5移动模板</title>
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1" />
+    <meta name="yixin-share-desc" content="" />
+    <meta name="yixin-share-image" content="" />
+    <meta name="apple-itunes-app" content="app-id=, affiliate-data=myAffiliateData, app-argument=" />
+    <link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+<script>
+    // 移动端适配方法   1rem = 100px
+    !function(e, t) {
+            var n = e.documentElement,
+                i = "orientationchange" in window ? "orientationchange": "resize",
+                d = (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream,
+                    function() {
+                        var t = n.clientWidth;
+                        t && (t >= 750 ? (t = 750, e.body.style.width = "750px") : e.body.style.width = t + "px", n.style.fontSize = 100 * (t / 750) + "px", n.dataset.width = t, n.dataset.percent = 100 * (t / 750))
+                    });
+            d(),
+                e.documentElement.classList.add("iosx" + t.devicePixelRatio),
+            e.addEventListener && t.addEventListener(i, d, !1)
+        } (document, window)
+</script>
+<div class="container">
+    <p>welcome used h5 model</p>
+
+</div>
+</body>
+</html>
